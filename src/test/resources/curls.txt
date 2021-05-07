@@ -1,0 +1,13 @@
+curl --location --request GET 'http://localhost:8080/persons/1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "man",
+    "age": 20
+}'
+
+curl --location --request POST 'http://localhost:8080/persons' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "man22",
+    "age": 44
+}'
